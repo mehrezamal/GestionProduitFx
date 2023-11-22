@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <children>
+      <AnchorPane prefHeight="606.0" prefWidth="200.0" style="-fx-background-color: pink;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="601.0" prefWidth="166.0">
+               <children>
+                  <Button fx:id="ptnproduit" mnemonicParsing="false" onAction="#produitHome" prefHeight="171.0" prefWidth="204.0" stylesheets="@../application/application.css" text="Produit">
+                     <font>
+                        <Font name="Corbel" size="25.0" />
+                     </font></Button>
+                  <Button fx:id="btncategorie" contentDisplay="CENTER" mnemonicParsing="false" onAction="#categorieHome" prefHeight="200.0" prefWidth="300.0" stylesheets="@../application/application.css" text="Categorie" textAlignment="CENTER">
+                     <font>
+                        <Font name="Corbel" size="24.0" />
+                     </font></Button>
+                  <Button fx:id="btnclient" mnemonicParsing="false" onAction="#ComHome" prefHeight="164.0" prefWidth="204.0" stylesheets="@../application/application.css" text="Commande" textAlignment="CENTER">
+                     <font>
+                        <Font name="Corbel" size="24.0" />
+                     </font></Button>
+                  <Button fx:id="btnadmin" mnemonicParsing="false" onAction="#adminHome" prefHeight="123.0" prefWidth="166.0" stylesheets="@../application/application.css" text="Admin">
+                     <font>
+                        <Font name="Corbel" size="27.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="bodyHome" layoutX="166.0" prefHeight="601.0" prefWidth="634.0" style="-fx-background-color: pink;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="166.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="601.0" fitWidth="570.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imageprod" fitHeight="605.0" fitWidth="634.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../image/1.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

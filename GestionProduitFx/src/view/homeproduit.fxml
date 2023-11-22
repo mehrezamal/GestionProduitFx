@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeProduitController">
+   <children>
+<TableView fx:id="tableproduit" layoutX="150.0" layoutY="370.0" onMouseClicked="#afficheproduit" prefHeight="195.0" prefWidth="301.0">
+        <columns>
+          <TableColumn fx:id="idproduit" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="idnom" prefWidth="77.0" text="lib" />
+            <TableColumn fx:id="idprix" prefWidth="73.0" text="prix" />
+            <TableColumn fx:id="idcateg" prefWidth="75.0" text="categ" />
+        </columns>
+      </TableView>
+      <Label layoutX="172.0" layoutY="58.0" text="idproduit" />
+      <Label layoutX="171.0" layoutY="119.0" text="lib" />
+      <Label layoutX="171.0" layoutY="186.0" text="prix" />
+      <Label layoutX="171.0" layoutY="259.0" text="categ" />
+      <Button fx:id="updatebtn" layoutX="451.0" layoutY="318.0" mnemonicParsing="false" onAction="#updateproduit" text="update" />
+      <Button fx:id="deletebtn" layoutX="330.0" layoutY="318.0" mnemonicParsing="false" onAction="#deleteproduit" text="delete" />
+      <Button fx:id="newbtn" layoutX="61.0" layoutY="318.0" mnemonicParsing="false" onAction="#newproduit" text="new" />
+      <Button fx:id="createbtn" layoutX="188.0" layoutY="318.0" mnemonicParsing="false" onAction="#createproduit" text="create" />
+      <TextField fx:id="idproduittxt" layoutX="318.0" layoutY="55.0" />
+      <TextField fx:id="nomtxt" layoutX="320.0" layoutY="116.0" />
+      <TextField fx:id="prixtxt" layoutX="310.0" layoutY="183.0" />
+      <TextField fx:id="categtxt" layoutX="312.0" layoutY="256.0" />
+   </children>
+</AnchorPane>
